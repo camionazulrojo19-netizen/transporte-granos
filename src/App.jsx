@@ -45,15 +45,16 @@ async function sheetsGet(range) {
   return data.values || [];
 }
 
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxPZniIYr3zbmkr335FQ5ZIZ_wWf5pxTliUvoPFoyG6aI_EYKQzS8z5y5UieapfI15z2A/exec";
+
 async function sheetsAppend(range, values) {
-  const url = `${BASE}/${SHEET_ID}/values/${encodeURIComponent(range)}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS&key=${API_KEY}`;
-  const res = await fetch(url, {
+  const res = await fetch(SCRIPT_URL, {
     method:"POST",
+    mode:"no-cors",
     headers:{ "Content-Type":"application/json" },
-    body: JSON.stringify({ values })
+    body: JSON.stringify({ row: values[0] })
   });
-  if (!res.ok) throw new Error("Error guardando en Sheets");
-  return res.json();
+  return res;
 }
 
 function rowToRecord(row) {
