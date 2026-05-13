@@ -80,17 +80,7 @@ function recordToRow(r) {
 }
 
 // ─── DEMO DATA ────────────────────────────────────────────────────────────────
-const DEMO = [
-  { id:"1", type:"gasto",   date:"2026-05-01", category:"Choferes", truck:"Camión Rojo", grain:null,    amount:85000,  description:"Sueldo mayo - Juan",      createdBy:"RoVasq", createdAt:"01/05/2026, 8:00",  updatedBy:"", updatedAt:"" },
-  { id:"2", type:"gasto",   date:"2026-05-01", category:"Choferes", truck:"Camión Azúl", grain:null,    amount:85000,  description:"Sueldo mayo - Pedro",     createdBy:"JaVasq", createdAt:"01/05/2026, 8:05",  updatedBy:"", updatedAt:"" },
-  { id:"3", type:"gasto",   date:"2026-05-01", category:"Salarios", truck:"General",     grain:null,    amount:60000,  description:"Mi salario mayo",         createdBy:"RoVasq", createdAt:"01/05/2026, 8:10",  updatedBy:"", updatedAt:"" },
-  { id:"4", type:"gasto",   date:"2026-05-01", category:"Salarios", truck:"General",     grain:null,    amount:60000,  description:"Salario hermano mayo",    createdBy:"JaVasq", createdAt:"01/05/2026, 8:12",  updatedBy:"", updatedAt:"" },
-  { id:"5", type:"gasto",   date:"2026-05-02", category:"Seguros",  truck:"Camión Rojo", grain:null,    amount:18000,  description:"Seguro mensual - Rojo",   createdBy:"RoVasq", createdAt:"02/05/2026, 9:00",  updatedBy:"", updatedAt:"" },
-  { id:"6", type:"gasto",   date:"2026-05-02", category:"Seguros",  truck:"Camión Azúl", grain:null,    amount:18000,  description:"Seguro mensual - Azúl",   createdBy:"RoVasq", createdAt:"02/05/2026, 9:01",  updatedBy:"", updatedAt:"" },
-  { id:"7", type:"gasto",   date:"2026-05-03", category:"Carreta",  truck:"General",     grain:null,    amount:35000,  description:"Cuota carreta mayo",      createdBy:"JaVasq", createdAt:"03/05/2026, 10:00", updatedBy:"", updatedAt:"" },
-  { id:"8", type:"ingreso", date:"2026-05-05", category:null,       truck:"Camión Rojo", grain:"Maíz",  amount:220000, description:"Flete maíz - Cliente A",  createdBy:"RoVasq", createdAt:"05/05/2026, 14:00", updatedBy:"", updatedAt:"" },
-  { id:"9", type:"ingreso", date:"2026-05-07", category:null,       truck:"Camión Azúl", grain:"Trigo", amount:195000, description:"Flete trigo - Cliente B", createdBy:"JaVasq", createdAt:"07/05/2026, 16:30", updatedBy:"", updatedAt:"" },
-];
+const DEMO = [];
 
 // ─── SUBCOMPONENTES ───────────────────────────────────────────────────────────
 function Pill({ children, color, bg, border }) {
