@@ -2,8 +2,8 @@ import { useState, useMemo, useEffect, useCallback } from "react";
 
 // ─── CONFIGURACIÓN ─────────────────────────────────────────────────────────────
 // Pegá aquí tu Spreadsheet ID y API Key después de configurar Google Sheets
-const SHEET_ID   = "TU_SPREADSHEET_ID";
-const API_KEY    = "TU_API_KEY";
+const SHEET_ID = "1OzGAuwzurbATPLDK-7mwJSR71C8fScMj2Kyxs4_kyJA";
+const API_KEY  = "AIzaSyD5iDo0d_iGXCJQPy6GHTJnqpy77EH2nfA";
 const SHEET_NAME = "Movimientos";
 const LOG_SHEET  = "Auditoría";
 
